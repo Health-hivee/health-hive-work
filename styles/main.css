@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap");
 
 #Health-Hive {
   padding-top: 24px;
 }
+body{
+    max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+ background: #efedf9;
 
+}
 .menu-list {
   padding-left: 18px;
   padding-right: 18px;
@@ -14,8 +21,9 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 36px;
+  font-family: "Gentium Plus", serif;
 }
 
 .menu-list:hover > a {
@@ -45,13 +53,13 @@
 }
 
 .sign-up {
- background: #574EBB;
+  background: #574ebb;
 
   border-radius: 10px;
   padding: 0px 0px 0px 0px;
   gap: 8px;
 }
-.up{
+.up {
   color: white;
 }
 /* .sign-up > a {
@@ -76,8 +84,6 @@ button {
 }
 .partner {
   gap: 80px;
-  
-
 }
 .pp {
   height: 100.95px;
@@ -91,7 +97,7 @@ button {
   font-weight: 700;
   font-size: 40px;
   line-height: 51px;
-font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 .services-gap {
   gap: 21px;
@@ -115,7 +121,7 @@ font-family: 'Lora', serif;
 
 .specialist-pic {
   height: 336.7px;
-  width: 323.5px;
+  /* width: 323.5px; */
 }
 .Services > p {
   color: var(--black);
@@ -181,20 +187,17 @@ font-family: 'Lora', serif;
   margin-top: 5%;
 }
 
-
 /* footer */
 
 .footer {
- background: #B1AAFF;
+  background: #b1aaff;
   display: flex;
   justify-content: space-evenly;
-
 }
 .foot-left {
   /* padding-left: 5%; */
   /* width: 25%; */
 }
-
 
 .foot-images {
   width: 100%;
@@ -224,7 +227,6 @@ font-family: 'Lora', serif;
   padding-top: 0px;
 }
 
-
 .list-item {
   font-family: "Manrope", sans-serif;
   font-size: 20px;
@@ -243,21 +245,20 @@ font-family: 'Lora', serif;
   color: black;
 }
 
-.foot-middle{
-margin-top: 2%;
+.foot-middle {
+  margin-top: 2%;
 }
-.foot-right{
+.foot-right {
   margin-top: 2%;
 }
 .foot-middle h1 {
   font-family: Manrope;
-font-size: 36px;
-font-weight: 600;
-line-height: 49px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
-
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
 }
 .foot-middle li {
   font-family: "Manrope", sans-serif;
@@ -278,14 +279,13 @@ color: white;
 }
 /*  */
 .foot-right h1 {
-font-family: Manrope;
-font-size: 36px;
-font-weight: 600;
-line-height: 49px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
-
+  font-family: Manrope;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
 }
 .foot-right li {
   font-family: "Manrope", sans-serif;
@@ -304,10 +304,10 @@ color: white;
 }
 .foot-right a {
   text-decoration: none;
-  color: white
+  color: white;
 }
 hr.new1 {
-background: #B1AAFF;
+  background: #b1aaff;
 
   border-top: 5px solid black;
   width: 98%;
@@ -325,8 +325,7 @@ background: #B1AAFF;
   gap: 15px;
 }
 .down-down-down {
-  
- background: #B1AAFF;
+  background: #b1aaff;
 
   display: flex;
   /* padding-bottom: 3%;

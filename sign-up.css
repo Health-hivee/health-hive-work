@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+body{
+    background: #574EBB;
+
+}
+form {
+    height: 500px;
+    width: 1050px;
+ background: #574EBB;
+color: white;
+    margin: 1px auto;
+    
+}
+
+h3 {
+    font-family: Halant;
+    font-size: 64px;
+    font-weight: 600px;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 3%;
+    
+}
+
+.lab {
+    height: 624px;
+    width: 716px;
+    left: 142px;
+
+}
+
+.lab .namy {
+
+    font-family: Halant;
+    font-style: bold;
+    Font-size: 32px;
+    Line-height: 50px;
+    font-weight: 600;
+    Vertical-align: Top;
+
+}
+
+input[type=text],
+[type=password],
+[type=tel],
+[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+}
+
+input[type=submit] {
+    width: 31%;
+    margin-left: 390px;
+    background-color: #155EEF;
+    
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input ::placeholder{
+    Font-style: Regular;
+        Line-height: 24px;
+        Align: Left;
+        Vertical-align: Top;
+}
