@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
 #Health-Hive {
   padding-top: 24px;
 }
@@ -43,15 +45,18 @@
 }
 
 .sign-up {
-  background-color: var(--purple);
+ background: #574EBB;
+
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 0px 0px 0px 0px;
   gap: 8px;
 }
-
-.sign-up > a {
-  color: var(--white);
+.up{
+  color: white;
 }
+/* .sign-up > a {
+  color: var(--white);
+} */
 
 .sign-up:hover > a {
   color: var(--white);
@@ -71,6 +76,8 @@ button {
 }
 .partner {
   gap: 80px;
+  
+
 }
 .pp {
   height: 100.95px;
@@ -84,7 +91,7 @@ button {
   font-weight: 700;
   font-size: 40px;
   line-height: 51px;
-  font-family: var(--font);
+font-family: 'Lora', serif;
 }
 .services-gap {
   gap: 21px;
@@ -157,11 +164,11 @@ button {
   align-items: flex-start;
   padding: 10px 40px;
   gap: 8px;
-  position: absolute;
+  /* position: absolute;
   width: 261px;
   height: 66px;
   left: 589px;
-  top: 3488px;
+  top: 3488px; */
   background: #574ebb;
   border-radius: 10px;
   font-style: normal;
@@ -169,4 +176,168 @@ button {
   font-size: 36px;
   line-height: 46px;
   color: #ffffff;
+  margin-bottom: 5%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+
+/* footer */
+
+.footer {
+ background: #B1AAFF;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.foot-left {
+  /* padding-left: 5%; */
+  /* width: 25%; */
+}
+
+
+.foot-images {
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-top: 11%;
+}
+.foot-images img {
+  width: 80%;
+}
+/* .foot-section-3 {
+  display: flex;
+  width: 65%;
+  padding-top: 6%;
+  justify-content: space-between;
+} */
+.foot-left p {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 9%;
+  color: #83ab23;
+  padding-top: 0px;
+}
+
+
+.list-item {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+
+  color: black;
+}
+.list-item ul {
+  list-style-type: none;
+}
+.list-item a {
+  color: black;
+}
+
+.foot-middle{
+margin-top: 2%;
+}
+.foot-right{
+  margin-top: 2%;
+}
+.foot-middle h1 {
+  font-family: Manrope;
+font-size: 36px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+}
+.foot-middle li {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+}
+.foot-middle ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+.foot-middle a {
+  text-decoration: none;
+  color: white;
+}
+/*  */
+.foot-right h1 {
+font-family: Manrope;
+font-size: 36px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+}
+.foot-right li {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+.foot-right ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+.foot-right a {
+  text-decoration: none;
+  color: white
+}
+hr.new1 {
+background: #B1AAFF;
+
+  border-top: 5px solid black;
+  width: 98%;
+  margin-left: 10px;
+}
+.down-right {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.down-left {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  gap: 15px;
+}
+.down-down-down {
+  
+ background: #B1AAFF;
+
+  display: flex;
+  /* padding-bottom: 3%;
+  padding-top: 20px; */
+  padding: 20px 20px 20px 20px;
+}
+.down-down-down h6 {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
