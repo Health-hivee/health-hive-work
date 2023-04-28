@@ -1,0 +1,47 @@
+.Patient-details {
+  color: var(--black);
+  box-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.25);
+  width: 277px;
+  height: 122px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.details {
+  gap: 30px;
+  padding-left: 35px;
+  padding-top: 26px;
+}
+
+#recent {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 34px;
+}
+.myChart {
+  padding-left: 63px;
+  padding-top: 32px;
+}
+
+#checkups {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+ text-align: center;
+  color: var(--gray);
+}
+
+.i{
+  width: 432px;
+  height: 187px;
+  box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.25)
+}

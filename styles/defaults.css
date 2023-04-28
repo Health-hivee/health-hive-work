@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400;600&family=Manrope:wght@300;400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    margin: auto;
+    width: 1200px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .w-half {
+    width: 50%;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .equal {
+    width: 50%;
+  }

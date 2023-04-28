@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400;600&family=Manrope:wght@300;400&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: var(--font);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+.Sidebar {
+  background-color: var(--white);
+  height: 107%;
+  width: 357px;
+  box-shadow: 1px 1px 1px 1px #aaaaaa;
+  flex-direction: column;
+}
+
+.profile {
+  padding-top: 23px;
+}
+
+#logo {
+  width: 76.67px;
+  padding-left: 122px;
+}
+
+#name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2px;
+  color: var(--black);
+  padding-left: 112px;
+  font-family: var(--font);
+}
+
+#enrollee {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 100px;
+  font-family: var(--font);
+}
+
+.flex {
+  display: flex;
+}
+
+.align {
+  flex-direction: column;
+  padding: 0;
+}
+.menu-list {
+  padding: 12px 24px;
+}
+
+.menu-list:hover > a {
+  color: var(--white);
+}
+
+.menu-list:hover {
+  background-color: var(--purple);
+  transition: 0.6s;
+}
+
+.menu-list > a {
+  color: var(--gray);
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  padding: 12px 24px;
+}
+
+.logout > a {
+  color: var(--red);
+}
+
+.menu-list > img {
+  width: 25px;
+}
+
+.logout > a:hover {
+  color: var(--red);
+}
+
+.title {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--black);
+  padding-left: 30px;
+}
+
+.Menu-bar {
+  display: flex;
+  gap: 132px;
+}
+.input {
+  border-radius: 4px;
+  background: var(--white);
+  width: 520px;
+  height: 53px;
+  outline: none;
+  margin-top: 30px;
+  border: none;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 32px;
+  color: var(--gray);
+  font-family: var(--font);
+}
+
+.Menu-bar img {
+  object-fit: contain;
+  width: 30.5px;
+}
+
+.section {
+  background: var(--white);
+  height: 84.5%;
+  width: 105.92%;
+  padding: 2px;
+  box-shadow: 0px 5px 5px 0px #aaaaaa;
+  
+}

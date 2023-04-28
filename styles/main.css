@@ -1,0 +1,172 @@
+#Health-Hive {
+  padding-top: 24px;
+}
+
+.menu-list {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.menu-list > a {
+  color: var(--gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.menu-list:hover > a {
+  color: var(--purple);
+}
+
+#logo {
+  width: 148.02px;
+}
+
+#compare {
+  color: var(--black);
+
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 61px;
+  margin-top: 250px;
+}
+
+#save-money {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: -40px;
+  color: var(--gray);
+}
+
+.sign-up {
+  background-color: var(--purple);
+  border-radius: 10px;
+  padding: 10px 20px;
+  gap: 8px;
+}
+
+.sign-up > a {
+  color: var(--white);
+}
+
+.sign-up:hover > a {
+  color: var(--white);
+}
+
+button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--white);
+  background-color: var(--purple);
+  border: 0;
+  border-radius: 20px;
+  font-family: var(--font);
+  padding: 10px 20px;
+  gap: 8px;
+}
+.partner {
+  gap: 80px;
+}
+.pp {
+  height: 100.95px;
+  width: 233px;
+  object-fit: contain;
+}
+
+#partner {
+  text-align: center;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  font-family: var(--font);
+}
+.services-gap {
+  gap: 21px;
+}
+.Services {
+  background: rgb(177, 170, 255);
+  box-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 403px;
+  height: 336px;
+}
+
+#value {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--gray);
+}
+
+.specialist-pic {
+  height: 336.7px;
+  width: 323.5px;
+}
+.Services > p {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1px;
+  text-align: center;
+}
+
+.Services > h3 {
+  color: var(--gray);
+  text-align: center;
+}
+.what-client {
+  width: 565px;
+  height: 336px;
+  box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.testimonial {
+  gap: 21px;
+  padding-left: 112px;
+}
+
+.partner {
+  padding-top: 75px;
+}
+
+.what {
+  gap: 331px;
+  padding: 23px 0 0 43px;
+}
+
+.testimonial h2 {
+  color: var(--black);
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 63px;
+  padding-top: 23px;
+}
+#button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 40px;
+  gap: 8px;
+  position: absolute;
+  width: 261px;
+  height: 66px;
+  left: 589px;
+  top: 3488px;
+  background: #574ebb;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #ffffff;
+}
