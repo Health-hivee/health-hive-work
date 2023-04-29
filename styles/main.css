@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 
 #Health-Hive {
   /* padding-top: 24px; */
@@ -45,7 +46,7 @@ body{
 #compare {
   color: var(--black);
 
-  font-family: var(--font);
+font-family: 'Lora', serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 61px;
@@ -54,9 +55,10 @@ body{
 
 #save-money {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 31px;
   margin-top: -40px;
+  font-family: 'Lora', serif;
   color: var(--gray);
 }
 
@@ -119,7 +121,7 @@ button {
 }
 
 #value {
-  font-family: var(--font);
+  font-family: 'Lora', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -148,6 +150,16 @@ button {
   height: 336px;
   box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+
+}
+#what-client h2{
+    font-family: Microsoft Tai Le;
+font-size: 17px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+padding-right: 10%;
 }
 .testimonial {
   gap: 21px;
@@ -171,6 +183,10 @@ button {
   line-height: 18px;
   padding-left: 63px;
   padding-top: 23px;
+}
+.have-a-question{
+  margin-left: 20%;
+  padding-bottom: 5%;
 }
 #button {
   display: flex;
