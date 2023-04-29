@@ -377,3 +377,70 @@ hr.new1 {
   letter-spacing: 0em;
   text-align: left;
 }
+
+.contact-section{
+  display: flex;
+  justify-content: space-around;
+  padding: 10%;
+  padding-bottom: 7%;
+}
+.contact-section-images {
+  width: 55%;
+}
+.contact-section-images img{
+width: 70%;
+}
+.contact-section-right {
+  width: 45%;
+}
+.contact-section-right h1 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact-section-right p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 60%;
+  /* padding: 10% 00%; */
+}
+.section-below-barcode {
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  height: 211px;
+  width: 211px;
+  left: 0px;
+  top: 0px;
+}
+.section-below-images img {
+  width: 50%;
+}
+.section-below {
+  /* margin-left: 10%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+.contact-section-right h6 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+ .section-below-text p {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
