@@ -2,8 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap");
 
 #Health-Hive {
-  padding-top: 24px;
+  /* padding-top: 24px; */
+  width: 20%;
 }
+#Health-Hive img{
+  /* padding-top: 24px; */
+  width: 80%;
+}
+
+
 body{
     max-width: 1440px;
   width: 100%;
@@ -14,6 +21,7 @@ body{
 .menu-list {
   padding-left: 18px;
   padding-right: 18px;
+  margin-top: 9%;
 }
 
 .menu-list > a {
