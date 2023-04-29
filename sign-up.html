@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration page</title>
     <link rel="stylesheet" href="sign-up.css">
-   
+    <script src="https://kit.fontawesome.com/f1001be9c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-
 <body>
-    <main>
- <form>
-     <div class="Menu-bar">
-          <a href="index.html"><h2 class="title">HIVE</h2></a>
-          <input class="input" type="search" placeholder="search" />
-          <img id="notification" src="Media/images/Frame (11).png" alt="#" />
+    <div >
+        <div class="logo">
+             <img src="./Media/images/new-logo-editted.png" alt="logo" />
         </div>
-        <h3>Create An Acount</h3>
-        <table class="lab">
-            <tr>
-                <td><label for="Name" class="namy">Name:</label></td>
-                <td><input type="text" placeholder="Enter your Name"></td>
-            </tr>
-            <tr>
-                <td><label for="Usname" class="namy">Username:</label></td>
-                <td><input type="text" placeholder="Enter your Username"></td>
-            </tr>
-            <tr>
-                <td><label for="pass" class="namy">Password:</label></td>
-                <td><input type="password" name="" id="" placeholder="Enter your Password"></td>
-            </tr>
-            <tr>
-                <td><label for="pass" class="namy">Re-type Password:</label></td>
-                <td><input type="password" name="" id="" placeholder="Enter your Password"></td>
-            </tr>
-            <tr>
-                <td><label for="gender" class="namy">Gender: </label></td>
-                <td><input type="radio" name="" id="gender">
-                    <label for="">Male</label>
-                    <input type="radio" name="" id="gender">
-                    <label for="">Female</label>
-                </td>
-
-            </tr>
-
-            <tr>
-                <td><label for="" class="namy">Phone Number:</label></td>
-                <td><input type="tel" name="" id="" placeholder="Enter your address"></td>
-            </tr>
-            <tr>
-                <td><label for="email" class="namy">Email:</label></td>
-                <td><input type="email" name="" id="" placeholder="Enter your Email Address"></td>
-            </tr>
-
-        </table>
-        <div><input type="submit" value="Submit"></div>
-
-
-    </form>
-    </main>
-   
+       
+           <div class="bordersection">
+            <i class='fas fa-arrow-left' style='font-size:22px' ></i>
+           <h1>
+            Create your account
+          </h1>
+          <p>
+          We are glad you have made it this far, please provide <br> your details so we can know you better
+          </p>
+          <div class="form">
+          <form>
+            <label for="fname">Username</label><br>
+            <input type="text" id="fname" name="fname"  autocomplete="on" value=""><br><br>
+            <label for="lname">Email</label><br><br>
+        <input list="browsers" name="browser" id="browser" value=""><br><br>
+            <label for="lname">Password</label><br><i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+            <input type="password" id="lname" name="lname"  autocomplete="off" value=""><br><br>
+            <input type="submit"  id= "button" value="Create account">
+          </form>
+          <strong>Already have an account? <span style="color: #5034C8;"> <a href="login.html" target="_blank">Log In </a> </span></strong>
+    </div>
+    
 </body>
-
 </html>

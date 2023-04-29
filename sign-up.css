@@ -1,120 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Halant:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 body{
-    background: #574EBB;
-   max-width: 1440px;
+    background-color: #FFF6E9;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    margin: 0;
+    overflow-x: hidden;
+    margin-bottom: 5%;
+        max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
-
 }
-form {
-    height: 500px;
-    width: 1050px;
- background: #574EBB;
-color: white;
-    margin: 1px auto;
+
+.logo{
+   margin-left: 50%;
+   margin-bottom: 0%;
+}
+.logo img{
+    width: 25%;
+}
+
+.bordersection{
+    background-color:  #FFFFFF;
+    Width: 505px;
+    height: 620px;
+    border-radius: 20px;
+    /* top: 3em; */
+    position: absolute;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+    left: 450px;
+    top: 7.5em;
     
 }
+i{
+     margin-right: 45em;
+     padding: 2.6em;
+     border-width: 0 2px 2px 0;
+     position: absolute;
+      }
+      h1{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: black;
+        position: absolute;
+        margin-left: 8em;
+        top: 2em;
+      }
+      p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #18053A;
+        width: 319px;
+        margin-left: 8em;
+        top: 6.5em;
+        position: absolute;
+       
+      }
 
-h3 {
-    font-family: Halant;
-    font-size: 64px;
-    font-weight: 600px;
-    line-height: 5px;
-    text-align: left;
-    margin-top: 3%;
-    
+.form{ margin-left: 3em;
+    top: 9em;
+    position: absolute;
+
+}
+label{
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 32px;
+color: #000000;
+}
+input{
+box-sizing: border-box;
+width: 396px;
+height: 65px;
+left: 542px;
+top: 365px;
+background: #FAFAFA;
+border: 1px  #18053A;
+border-radius: 5px;
+}
+input:focus {
+    background: #FFF8EF;
+    border: 1px solid #18053A;
 }
 
-.lab {
-    /* height: 624px; */
-    width: 716px;
-    height: 100%;
-    left: 142px;
-
-}
-
-.lab .namy {
-
-    font-family: Halant;
-    font-style: bold;
-    Font-size: 32px;
-    Line-height: 50px;
-    font-weight: 600;
-    Vertical-align: Top;
-
-}
-
-input[type=text],
-[type=password],
-[type=tel],
-[type=email],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+strong{
    
-}
+    position: absolute;
+    left: 10em;
+    top: 38em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: black}
 
-input[type=submit] {
-    width: 31%;
-    margin-left: 390px;
-    background-color: #155EEF;
+    #eye{
+        margin-left: 19em;
+    top: 16.5em;
+    }
+
+    a{ text-decoration: none;
+  
+    }
+    #button{box-sizing: border-box;
+        width: 396px;
+        height: 50px;
+        line-height: 20px;
+        background: #5034C8;
+        color: #FAFAFA;
+        font-weight: 600;
+       font-size: 14px;
+       font-family: 'Montserrat';
+       border-radius: 3px;
+       border: 1px ;
+       padding: 10px;
+       box-shadow: 5px 6px black;
+       transition: transform .1s;
     
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.input ::placeholder{
-    Font-style: Regular;
-        Line-height: 24px;
-        Align: Left;
-        Vertical-align: Top;
-}
-.Menu-bar {
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-gap: 132px;
-    /* background-color: #f2f2f2; */
-}
-.input {
-border-radius: 4px;
-    background: var(--white);
-    width: 520px;
-    height: 53px;
-    outline: none;
-    margin-top: 30px;
-    border: none;
-    box-sizing: border-box;
-    background-color: white;
-
-}
-::placeholder {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding-left: 32px;
-  color: var(--gray);
-  font-family: var(--font);
-}
-.Menu-bar img {
-  object-fit: contain;
-  /* width: 30.5px; */
-}
-.title {
-    color: white;
-    text-decoration: unset;
-    font-size: 35px;
-}
-a{
-    text-decoration:none;
-}
+    }
+    #button:hover{
+        transform: scale(1.1);
+    }
