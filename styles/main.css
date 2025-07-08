@@ -40,7 +40,9 @@ body{
 }
 
 #logo {
-  width: 148.02px;
+  max-width: 148.02px; /* Allow shrinking */
+  width: 100%; /* Take container width if smaller */
+  height: auto; /* Maintain aspect ratio */
 }
 
 #compare {
@@ -96,8 +98,9 @@ button {
   gap: 80px;
 }
 .pp {
-  height: 100.95px;
-  width: 233px;
+  max-width: 233px; /* Allow shrinking */
+  width: 100%;    /* Take container width if smaller */
+  height: auto;   /* Maintain aspect ratio */
   object-fit: contain;
 }
 
@@ -116,8 +119,13 @@ button {
   background: rgb(177, 170, 255);
   box-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  width: 403px;
-  height: 336px;
+  /* width: 403px; */ /* Will be handled by flex properties or media queries */
+  flex: 1 1 300px; /* Allow growing, shrinking, with a base of ~300px before wrapping */
+  max-width: 403px; /* Ensure it doesn't get too large on wide screens if only one item */
+  min-height: 336px; /* Maintain a minimum height, consider if content should dictate this */
+  display: flex; /* To help with internal alignment if needed */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute space if content is shorter than min-height */
 }
 .Services h4{
   color: white;
@@ -143,8 +151,11 @@ button {
 }
 
 .specialist-pic {
-  height: 336.7px;
-  /* width: 323.5px; */
+  width: 100%; /* Make image take full width of its container (.Services) */
+  max-width: 323.5px; /* Assuming this was an intended max design width */
+  height: auto;     /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center if max-width is hit */
 }
 .Services > p {
   color: var(--black);
@@ -159,11 +170,14 @@ button {
   text-align: center;
 }
 .what-client {
-  width: 565px;
-  height: 336px;
+  /* width: 565px; */ /* Will be handled by flex or media queries */
+  flex: 1 1 450px; /* Allow growing, shrinking, with a base of ~450px */
+  max-width: 565px; /* Max width it can take */
+  min-height: 336px; /* Maintain minimum height, content might make it taller */
   box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-
+  display: flex; /* For internal alignment */
+  flex-direction: column; /* Stack content vertically */
 }
 #what-client h2{
     font-family: Microsoft Tai Le;
@@ -198,8 +212,13 @@ padding-right: 10%;
   padding-top: 23px;
 }
 .have-a-question{
-  margin-left: 20%;
+  /* margin-left: 20%; */ /* Replaced by auto margins for centering or handled in MQ */
   padding-bottom: 5%;
+  text-align: center; /* Center the image if it's inline-block or block with auto margins */
+}
+.have-a-question img {
+  max-width: 100%; /* Ensure image scales */
+  height: auto;
 }
 #button {
   display: flex;
@@ -220,8 +239,12 @@ padding-right: 10%;
   line-height: 46px;
   color: #ffffff;
   margin-bottom: 5%;
-  margin-left: 35%;
+  /* margin-left: 35%; */ /* Replaced by auto margins for block display */
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5%;
+  display: block; /* Make it a block to use auto margins for horizontal centering */
+  width: fit-content; /* Or a specific max-width if needed */
 }
 
 /* footer */
@@ -414,10 +437,11 @@ width: 70%;
 .section-below-barcode {
   background-color: #3d3d3d;
   border-radius: 10px;
-  height: 211px;
-  width: 211px;
-  left: 0px;
-  top: 0px;
+  max-width: 211px; /* Allow shrinking */
+  width: 100%;    /* Take container width if smaller */
+  height: auto;   /* Maintain aspect ratio if content allows, or set specific height */
+  aspect-ratio: 1 / 1; /* Maintain a square shape if that's the design intent */
+  /* Remove left and top if they are not needed for positioning */
 }
 .section-below-images img {
   width: 50%;
@@ -444,3 +468,210 @@ width: 70%;
     letter-spacing: 0em;
     text-align: left;
   }
+
+/* =========================================== */
+/*              Media Queries                  */
+/* =========================================== */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #compare {
+        font-size: 40px; /* Slightly smaller */
+        margin-top: 150px; /* Reduced margin */
+    }
+
+    #save-money {
+        font-size: 18px;
+    }
+
+    .partner {
+        gap: 40px; /* Reduced gap */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center wrapped items */
+    }
+
+    .pp {
+        max-width: 180px; /* Smaller logos */
+    }
+
+    .services-gap, .testimonial {
+        padding-left: 20px; /* Reduce large paddings */
+        padding-right: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Services, .what-client {
+        flex-basis: calc(50% - 20px); /* Aim for 2 columns, accounting for gap */
+        min-width: 280px; /* Minimum width before stacking further if possible */
+    }
+
+    .what {
+        gap: 150px; /* Significantly reduced gap */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer columns */
+        align-items: center; /* Center items */
+        text-align: center;
+    }
+    .foot-left, .foot-middle, .foot-right {
+        width: 80%; /* Allow them to take more width */
+        margin-bottom: 20px;
+    }
+    .foot-middle h1, .foot-right h1 {
+        font-size: 28px;
+    }
+    .foot-middle li, .foot-right li {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .down-down-down {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .down-right, .down-left {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact-section {
+        padding: 5%; /* Reduced padding */
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-section-images, .contact-section-right {
+        width: 90%; /* Take more width when stacked */
+        margin-bottom: 20px;
+    }
+    .contact-section-right p {
+        width: 100%;
+    }
+    .section-below {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-below-barcode {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container > .flex.justify-between { /* Targeting the main nav flex container */
+        flex-direction: column;
+        align-items: center;
+    }
+    #Health-Hive {
+        width: 50%; /* Allow logo area to be a bit larger */
+        margin-bottom: 15px;
+    }
+    #Health-Hive img { /* logo itself */
+        width: 60%; /* Adjust logo size */
+        margin: 0 auto;
+        display: block;
+    }
+
+    nav .flex ul.flex { /* Targeting the ul in the nav */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu-list {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 10px; /* Space between stacked menu items */
+        width: 100%;
+        text-align: center;
+    }
+    .menu-list > a {
+        font-size: 24px; /* Adjust font size for mobile nav */
+    }
+    .sign-up {
+        padding: 5px 10px; /* Adjust button padding */
+    }
+
+
+    #compare {
+        font-size: 32px;
+        line-height: 1.3;
+        margin-top: 80px;
+        text-align: center;
+    }
+    #save-money {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0 15px; /* Add some horizontal padding */
+    }
+
+    /* Banner section with .equal class */
+    .container > .flex:not(nav .flex) > .equal { /* Target .equal divs not in nav */
+         width: 100% !important; /* Override utility potentially */
+         padding: 0 15px; /* Add some padding */
+    }
+     .container > .flex:not(nav .flex) {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Ensure the image in banner scales */
+    .container > .flex:not(nav .flex) > .equal img.w-full {
+        margin-top: 20px;
+    }
+
+
+    #partner { /* "Our Most Valuable Partner" and "Our Services" titles */
+        font-size: 28px;
+    }
+
+    .pp {
+        max-width: 150px; /* Even smaller logos */
+    }
+
+    .Services, .what-client {
+        flex-basis: 100%; /* Full width for cards */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .what {
+        gap: 20px; /* Drastically reduced gap */
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #button { /* Enroll Now button */
+        font-size: 24px;
+        padding: 15px 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .have-a-question {
+        margin-left: auto; /* Center */
+        margin-right: auto; /* Center */
+        width: 80%;
+    }
+    .have-a-question img{
+        width: 100%;
+    }
+
+    #value { /* "What makes us more special" text */
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    #special { /* Image next to "What makes us more special" */
+        margin-top: 20px;
+    }
+
+}
