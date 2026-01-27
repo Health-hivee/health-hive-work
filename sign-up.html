@@ -12,31 +12,32 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <div >
+    <div>
         <div class="logo">
            <a href="index.html"> <img src="./Media/images/new-logo-editted.png" alt="logo" /></a> 
         </div>
        
-           <div class="bordersection">
-            <i class='fas fa-arrow-left' style='font-size:22px' ></i>
-           <h1>
-            Create your account
-          </h1>
-          <p>
-          We are glad you have made it this far, please provide <br> your details so we can know you better
-          </p>
-          <div class="form">
-          <form>
-            <label for="fname">Username</label><br>
-            <input type="text" id="fname" name="fname"  autocomplete="on" value=""><br><br>
-            <label for="lname">Email</label><br><br>
-        <input list="browsers" name="browser" id="browser" value=""><br><br>
-            <label for="lname">Password</label><br><i class="fa fa-eye" id="eye" aria-hidden="true"></i>
-            <input type="password" id="lname" name="lname"  autocomplete="off" value=""><br><br>
-            <input type="submit"  id= "button" value="Create account">
-          </form>
-          <strong>Already have an account? <span style="color: #5034C8;"> <a href="login.html" target="_blank">Log In </a> </span></strong>
+        <div class="bordersection">
+            <i class='fas fa-arrow-left' style='font-size:22px' onclick="window.history.back()"></i>
+            <h1>Create your account</h1>
+            <p>
+                We are glad you have made it this far, please provide <br> your details so we can know you better
+            </p>
+            <div class="form">
+                <form action="login.html">
+                    <label for="fname">Username</label><br>
+                    <input type="text" id="fname" name="fname"  autocomplete="on" value=""><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" value=""><br><br>
+                    <label for="password">Password</label><br>
+                    <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+                    <input type="password" id="password" name="password"  autocomplete="off" value=""><br><br>
+                    <input type="submit"  id= "button" value="Create account">
+                </form>
+                <strong>Already have an account? <span style="color: #5034C8;"> <a href="login.html">Log In </a> </span></strong>
+            </div>
+        </div>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
